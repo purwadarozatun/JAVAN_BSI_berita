@@ -8,4 +8,4 @@ Import Database
 ``` berita.sql ```
 
 Run java 
-./gradlew --console plain runWithJavaExec 
+```./gradlew --console plain runWithJavaExec ```
