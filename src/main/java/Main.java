@@ -16,7 +16,7 @@ class Main {
                 System.out.println("Menu: ");
                 System.out.println(ms.renderMenu());
                 selectedMenu = MenuServices.askMenu("Silahkan Pilih Menu", ms.getListMenu());
-               
+
             } else {
 
                 if (selectedMenu.getAction() == "EXIT") {
@@ -25,8 +25,20 @@ class Main {
                     new BeritaController().index();
                     selectedMenu = null;
                 } else if (selectedMenu.getAction() == "TAMBAH_BERITA") {
-
+                    new BeritaController().createBerita();
                     selectedMenu = null;
+                } else if (selectedMenu.getAction() == "PUB_UNPUB_BERITA") {
+                    new BeritaController().unPublishBerita();
+                    selectedMenu = null;
+
+                }  else if (selectedMenu.getAction() == "REMOVE_BERITA") {
+                    new BeritaController().deleteBerita();
+                    selectedMenu = null;
+
+                } else if (selectedMenu.getAction() == "UPDATE_BERITA") {
+                    new BeritaController().updateBerita();
+                    selectedMenu = null;
+
                 }
             }
         }

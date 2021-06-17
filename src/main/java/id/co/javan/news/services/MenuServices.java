@@ -27,6 +27,9 @@ public class MenuServices {
         currentListMenu.add(new Menu("Home", "HOME"));
         currentListMenu.add(new Menu("Tambah Berita", "TAMBAH_BERITA"));
         currentListMenu.add(new Menu("List Berita", "LIST_BERITA"));
+        currentListMenu.add(new Menu("Update Berita", "UPDATE_BERITA"));
+        currentListMenu.add(new Menu("Hapus Berita", "REMOVE_BERITA"));
+        currentListMenu.add(new Menu("Publish Unpublish Berita", "PUB_UNPUB_BERITA"));
         currentListMenu.add(new Menu("Exit", "EXIT"));
         menuServices.setListMenu(currentListMenu);
         return menuServices;
