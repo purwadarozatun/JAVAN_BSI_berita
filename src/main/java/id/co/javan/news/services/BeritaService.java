@@ -11,8 +11,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import id.co.javan.news.entity.Berita;
+import org.apache.log4j.Logger;
 
 public class BeritaService {
+
+    static Logger logger = Logger.getLogger(BeritaService.class);
 
     public List<Berita> getAllBerita() {
         List<Berita> listBerita = new ArrayList<Berita>();
@@ -24,7 +27,6 @@ public class BeritaService {
             ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                // System.out.print("ID: " + rs.getInt("id"));
                 Berita beritaInstance = new Berita();
                 beritaInstance.setId(rs.getInt("id"));
                 beritaInstance.setContent(rs.getString("content"));
@@ -36,6 +38,7 @@ public class BeritaService {
                 listBerita.add(beritaInstance);
             }
         } catch (SQLException e) {
+            logger.error(e);
             e.printStackTrace();
         }
 
@@ -54,6 +57,7 @@ public class BeritaService {
             return true;
 
         } catch (SQLException e) {
+            logger.error(e);
             System.out.println(e.getMessage());
             return false;
         }
@@ -71,6 +75,7 @@ public class BeritaService {
             return true;
 
         } catch (SQLException e) {
+            logger.error(e);
             System.out.println(e.getMessage());
             return false;
         }
@@ -87,6 +92,7 @@ public class BeritaService {
             return true;
 
         } catch (SQLException e) {
+            logger.error(e);
             System.out.println(e.getMessage());
             return false;
         }
@@ -105,6 +111,7 @@ public class BeritaService {
             return true;
 
         } catch (SQLException e) {
+            logger.error(e);
             System.out.println(e.getMessage());
             return false;
         }
