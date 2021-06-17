@@ -1,0 +1,16 @@
+id/co/javan/news/services/MenuServices.java
+ id.co.javan.news.services.MenuServices
+id/co/javan/news/services/BeritaService.java
+ id.co.javan.news.services.BeritaService
+id/co/javan/news/services/DatabaseService.java
+ id.co.javan.news.services.DatabaseService
+id/co/javan/news/entity/Berita.java
+ id.co.javan.news.entity.Berita
+id/co/javan/news/entity/Menu.java
+ id.co.javan.news.entity.Menu
+Main.java
+ Main
+id/co/javan/news/utils/TableUtils.java
+ id.co.javan.news.utils.TableUtils
+id/co/javan/news/controller/BeritaController.java
+ id.co.javan.news.controller.BeritaController
